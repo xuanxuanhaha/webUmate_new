@@ -1,0 +1,83 @@
+.three_wording{
+  color: white;font-size: 2.1rem;font-weight: 200;margin-top: 20px
+}
+.phone_icon{
+  width: 15%
+}
+.map_icon{
+  width: 14%;
+}
+.mail_icon{
+  width: 15%;
+}
+.each_section{
+  width: 33%;text-align: center
+}
+.longer_wording{
+  width: 100%;text-align: center;color: rgba(250,250,250,0.6);font-size: 1.5rem;font-weight: 300;margin-top: 10px
+}
+.shorter_wording{
+  width: 100%;text-align: center;color: rgba(250,250,250,0.4);font-size: 1.2rem;font-weight: 300;margin-top: 10px
+}
+@media screen and (max-width: 1700px) {
+  .three_wording{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1105px) {
+  .three_wording{
+    font-size: 1.5rem;
+  }
+  .phone_icon{
+    width: 17%
+  }
+  .map_icon{
+    width: 16%;
+    margin-top: -2px;
+  }
+  .mail_icon{
+    width: 17%;
+  }
+  .longer_wording{
+    font-size: 1.2rem;
+  }
+  .shorter_wording{
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .three_wording{
+    font-size: 1rem;
+    width: 90%;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  .longer_wording{
+    font-size: 1.0rem;
+    width: 90%;
+    margin-left:auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .each_section {
+    width: 100%;
+  }
+  .longer_wording{
+    font-size: 1rem;
+  }
+  .shorter_wording{
+    font-size: 0.8rem;
+  }
+  .phone_icon{
+    width: 6%
+  }
+  .map_icon{
+    width: 5%;
+    margin-top: 20px;
+  }
+  .mail_icon{
+    width: 6%;
+    margin-top: 20px;
+  }
+}

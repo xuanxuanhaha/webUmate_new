@@ -1,0 +1,61 @@
+<div class="enquiry_section" id="enquiry_section">
+  <div class="enquiry_heading contenttitle">
+    ENQUIRES
+  </div>
+  <div class="enquiry_body">
+    <div class="first_row">
+      <div class="name_section">
+        <input type="text" placeholder="Name" class="text_box" [(ngModel)]="customerName" />
+        <div [hidden]="!nameShow" class="error_message">
+          This field is required
+        </div>
+      </div>
+      <div class="mobile_section">
+        <input type="text" placeholder="Mobile" class="text_box" [(ngModel)]="customerMobile" />
+        <div [hidden]="!mobileShow" class="error_message">
+          This field is required
+        </div>
+      </div>
+    </div>
+    <div class="second_row">
+      <div class="email_section">
+        <input type="text" placeholder="Email" class="text_box" [(ngModel)]="customerEmail" />
+        <div [hidden]="!emailShow" class="error_message">
+          This field is required
+        </div>
+        <div [hidden]="!invalidEmail" class="error_message">
+          The email address entered is invalid
+        </div>
+      </div>
+      <div class="subject_section">
+        <input type="text" placeholder="Subject" class="text_box" [(ngModel)]="customerSubject" />
+        <div [hidden]="!subjectShow" class="error_message">
+          This field is required
+        </div>
+      </div>
+    </div>
+    <div class="message_box">
+                <textarea placeholder="Message" [(ngModel)]="customerMessage" class="text_area_box"
+                          rows="10" cols="0">
+                </textarea>
+      <div [hidden]="!enquiryMessageShow" class="error_message">
+        This field is required
+      </div>
+    </div>
+    <div class="submit_button" (click)="formsubmit()">
+      <button type="button" class="enquire_button_btn">
+        {{submitBut}}
+      </button>
+
+
+      <div class="big_error_message" [hidden]="!bigErrorShow">
+        One or more fields have an error. Please check and try again.
+      </div>
+
+      <div class="success_message" [hidden]="!showSuccessMessage">
+        &#10003; Thanks for submitting your enquiry. We will get in touch with you very soon.
+      </div>
+
+    </div>
+  </div>
+</div>

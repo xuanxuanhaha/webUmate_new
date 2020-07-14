@@ -1,0 +1,219 @@
+/*top purple part*/
+
+.top_left_our_services{
+  color: white;width: 50%;margin-top: 300px;padding-left: 145px
+}
+.top_left_sub_title{
+  font-size: 2.1rem;font-weight: lighter;margin-top: 18px
+}
+
+.section_header_purple{
+  font-size: 4.2rem
+}
+
+.homebannerimg {
+  width: 46%;
+  object-fit: cover;
+  transform-origin: 75% 75%;
+  background-position: center;
+  background-size: cover;
+}
+
+#triangle_purple{
+  width:0px;
+  height:0px;
+  border: 50px solid;
+  margin-left: 45%;
+  border-color: #2e0e5a transparent transparent transparent;
+  margin-top: 0;
+  z-index: 999;
+}
+
+
+/* Main section */
+.whole_border_of_main_section{
+  width: 100%;padding-top: 50px;padding-bottom: 50px;border-top: 1px solid #2e0e5a;color: #2e0e5a;
+}
+.whole_border_of_main_section_wordings{
+  width: 80%;margin: auto
+}
+.title_wording{
+  font-size: 3.5rem;font-weight: 500
+}
+.sub_wording{
+  font-size: 2.5rem;font-weight: 300;
+}
+.whole_border_of_main_section:hover{
+  background-color: #ff2aad;
+  transition: 1s;
+  cursor: pointer;
+}
+.whole_border_of_main_section:hover{
+  color: white;
+}
+
+
+
+@media screen and (max-width: 1700px) {
+  .top_left_our_services{
+    margin-top: 200px;
+  }
+  .section_header_purple{
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .top_left_our_services{
+    padding-left: 50px;
+    width: 50%;
+  }
+  .section_header_purple{
+    font-size: 3rem;
+  }
+
+  .title_wording{
+    font-size: 3rem;font-weight: 500
+  }
+  .sub_wording{
+    font-size: 2rem;font-weight: 300;
+  }
+
+}
+@media screen and (max-width: 1152px) {
+  .title_wording{
+    font-size: 2.5rem;font-weight: 500
+  }
+  .sub_wording{
+    font-size: 1.8rem;font-weight: 300;
+  }
+}
+@media screen and (max-width: 1105px) {
+  .homebannerimg{
+    width: 50%;
+  }
+  .section_header_purple{
+    font-size: 2.5rem;
+  }
+  .top_left_sub_title{
+    font-size: 1.5rem;
+  }
+  .middel_white_main_content{
+    font-size: 1.5rem;
+    width: 80%;margin: auto;
+  }
+  .whole_border_of_main_section_wordings{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1002px) {
+  .top_left_our_services{
+    margin-top: 120px;
+  }
+  .homebannerimg{
+    width: 45%;
+  }
+  .section_header_purple{
+    font-size: 2rem;
+  }
+  .title_wording{
+    font-size: 2rem;font-weight: 500
+  }
+  .sub_wording{
+    font-size: 1.4rem;font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .section_header_purple{
+    font-size: 1.8rem;
+  }
+  .top_left_sub_title{
+    font-size: 1rem;
+  }
+  .top_left_our_services{
+    width: 60%;
+  }
+  .homebannerimg{
+    width: 40%;
+  }
+  .title_wording{
+    font-size: 1.8rem;font-weight: 500
+  }
+  .sub_wording{
+    font-size: 1rem;font-weight: 300;
+  }
+  #triangle_purple{
+    margin-left: 40%;
+  }
+}
+@media screen and (max-width: 680px) {
+  .top_left_sub_title{
+    padding-bottom: 50px;
+  }
+  .title_wording{
+    font-size: 1.5rem;font-weight: 500
+  }
+  .sub_wording{
+    font-size: 1rem;font-weight: 300;
+  }
+}
+@media screen and (max-width: 600px) {
+  .desk_tab_girl_img{
+    display: none;
+  }
+  .mobile_girl_img{
+    position: absolute;top: 50px;margin-left: 58%;width: 40%;
+  }
+  .section_header_purple{
+    font-size: 1.5rem;
+  }
+  .top_left_our_services{
+    margin-top: 100px;
+    padding-left: 20px;
+  }
+  .middle_white_part_whole_border{
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    margin-top: -20px;
+  }
+}
+@media screen and (min-width: 601px) {
+  .mobile_girl_img{
+    display: none;
+  }
+
+}
+@media screen and (max-width: 500px) {
+  .mobile_carousel{
+    height: 150vw;
+  }
+  .top_left_our_services{
+    width: 90%;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section_header_purple{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    padding-left: 0;
+  }
+  .top_left_sub_title{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .mobile_girl_img{
+    display: none;
+  }
+  .title_wording{
+    font-size: 1.2rem;font-weight: 500
+  }
+  .sub_wording{
+    font-size: 0.8rem;font-weight: 300;
+  }
+  #triangle_purple{
+    margin-left: 35%;
+  }
+}

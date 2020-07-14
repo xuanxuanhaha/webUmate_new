@@ -1,0 +1,73 @@
+<!-- Desktop navbar view -->
+<div id="navbar_outer" style="width: 100%;" class="desktop_navbar">
+  <div id="navbar_real" style="max-width: 1500px; margin: auto;height: 150px">
+    <div class="row" style="margin: 0">
+      <div class="outer_div_for_logo">
+        <img src="../../assets/navbar/logo-white.png" id="whitelogo" class="webUmate_logo">
+        <img src="../../assets/navbar/logo_purple.png" id="purplelogo" class="webUmate_logo">
+      </div>
+      <div class="webUmate_menus">
+        <div class="row webUmate_menus_row">
+          <button class="btn navbar_btns" [routerLink]="['/']" id="home_wording">
+            Home
+          </button>
+          <div class="spaces_between_navbar_btns"></div>
+          <button class="btn navbar_btns" [routerLink]="['/our_service']" id="service_wording">
+            Services
+          </button>
+          <div class="spaces_between_navbar_btns"></div>
+          <button class="btn navbar_btns" id="team_wording">
+            Team
+          </button>
+          <div class="spaces_between_navbar_btns"></div>
+          <button class="btn navbar_btns" id="contact_wording">
+            Contact
+          </button>
+          <div class="spaces_between_navbar_btns"></div>
+          <button class="btn navbar_btns" id="white_phone_logo" style="color: white">
+            <img src="../../assets/navbar/phone-white.png" style="width: 35px;margin-top: -20px">
+            0436 756 657
+          </button>
+
+          <button class="btn navbar_btns" id="purple_phone_logo" style="color: #2e0e5a">
+            <img src="../../assets/navbar/phone_logo_purple.png" style="width: 35px;margin-top: -20px;">
+            0436 756 657
+          </button>
+          <div class="spaces_between_navbar_btns"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Mobile navbar view -->
+<div id="navbar_real_mobile" class="menu-container mobile_navbar" style="width: 100vw;position:absolute;height: 150px">
+
+  <input type="checkbox" id="openmenu" class="hamburger-checkbox">
+
+  <div class="hamburger-icon">
+    <label for="openmenu" id="hamburger-label">
+      <span id="humburger_line_1"></span>
+      <span id="humburger_line_2"></span>
+      <span id="humburger_line_3"></span>
+      <span id="humburger_line_4"></span>
+    </label>
+  </div>
+  <div>
+    <img src="../../assets/navbar/logo-white.png" id="whitelogo_mobile" class="mobile_img_logo">
+    <img src="../../assets/navbar/logo_purple.png" id="purplelogo_mobile" class="mobile_img_logo">
+  </div>
+
+  <div class="menu-pane" style="width: 60vw;height: 100vh;background: #2e0e5a">
+
+    <nav style="background: #2e0e5a">
+      <ul class="menu-links">
+        <li><a href="###">Home</a></li>
+        <li><a href="###">Services</a></li>
+        <li><a href="###">Team</a></li>
+        <li><a href="###">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>

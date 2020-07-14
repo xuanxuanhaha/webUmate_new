@@ -1,0 +1,88 @@
+
+<div style="position: fixed;width: 100%;top:0;z-index: 999">
+  <app-navbar></app-navbar>
+</div>
+
+
+<!-- Top purple part -->
+<div style="height: auto;background: #2e0e5a;width: 100%;">
+  <div class="row" style="max-width: 1800px;margin: auto">
+    <div class="top_left_our_services" >
+      <h1 class="section_header_purple">
+        OUR SERVICES
+      </h1>
+
+      <h2 class="top_left_sub_title" style="max-width: 700px">
+        webUmate offers everything from web design, corporate identity, digital marketing, mobile, and brand positioning
+      </h2>
+
+  </div>
+    <img src="../../assets/service/tools.png" class="homebannerimg desk_tab_girl_img">
+  </div>
+  <img src="../../assets/service/tools.png" class="homebannerimg mobile_girl_img">
+</div>
+
+<div id="triangle_purple"></div>
+
+
+<div class="whole_border_of_main_section" style="margin-top: -100px" (click)="show_web_development_part_detail()">
+  <div class="whole_border_of_main_section_wordings">
+    <h5 class="title_wording">Website Development & Testing</h5>
+    <div [hidden]="!show_web_development_part">
+    <h5 class="sub_wording"> - Static pages</h5>
+    <h5 class="sub_wording"> - Dynamic pages </h5>
+    <h5 class="sub_wording"> - Responsive to support different screens (Desktop, Tablet & Mobile) </h5>
+    </div>
+  </div>
+</div>
+
+<div class="whole_border_of_main_section">
+  <div class="whole_border_of_main_section_wordings">
+    <h5 class="title_wording">Web Maintenance and Support</h5>
+  </div>
+</div>
+
+<div class="whole_border_of_main_section" (click)="show_design_part_detail()">
+  <div class="whole_border_of_main_section_wordings">
+    <h5 class="title_wording">Designs</h5>
+    <div [hidden]="!show_designs_part">
+    <h5 class="sub_wording"> - UI / UX (User Experience) </h5>
+    <h5 class="sub_wording"> - Graphic Design</h5>
+    </div>
+  </div>
+</div>
+
+<div class="whole_border_of_main_section">
+  <div class="whole_border_of_main_section_wordings">
+    <h5 class="title_wording">Product API integration Support </h5>
+  </div>
+</div>
+
+<div class="whole_border_of_main_section">
+  <div class="whole_border_of_main_section_wordings">
+    <h5 class="title_wording">Website Hosting Support in Cloud Platforms</h5>
+  </div>
+</div>
+
+<div class="whole_border_of_main_section" (click)="show_data_security_part_detail()">
+  <div class="whole_border_of_main_section_wordings">
+    <h5 class="title_wording">Data security</h5>
+    <div [hidden]="!show_data_security_part">
+    <h5 class="sub_wording"> - Encryption-Decryption for safer storage of user information</h5>
+    </div>
+  </div>
+</div>
+
+<div class="whole_border_of_main_section">
+  <div class="whole_border_of_main_section_wordings">
+    <h5 class="title_wording">Innovation consulting</h5>
+  </div>
+</div>
+
+<div class="whole_border_of_main_section">
+  <div class="whole_border_of_main_section_wordings">
+    <h5 class="title_wording">Search Engine Optimization</h5>
+  </div>
+</div>
+
+<app-footer></app-footer>
