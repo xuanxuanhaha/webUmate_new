@@ -3,8 +3,8 @@
   <div id="navbar_real" style="max-width: 1500px; margin: auto;height: 150px">
     <div class="row" style="margin: 0">
       <div class="outer_div_for_logo">
-        <img src="../../assets/navbar/logo-white.png" id="whitelogo" class="webUmate_logo">
-        <img src="../../assets/navbar/logo_purple.png" id="purplelogo" class="webUmate_logo">
+        <img src="assets/navbar/logo-white.png" id="whitelogo" class="webUmate_logo">
+        <img src="assets/navbar/logo_purple.png" id="purplelogo" class="webUmate_logo">
       </div>
       <div class="webUmate_menus">
         <div class="row webUmate_menus_row">
@@ -16,21 +16,21 @@
             Services
           </button>
           <div class="spaces_between_navbar_btns"></div>
-          <button class="btn navbar_btns" id="team_wording">
+          <button class="btn navbar_btns" [routerLink]="['/team']" id="team_wording">
             Team
           </button>
           <div class="spaces_between_navbar_btns"></div>
-          <button class="btn navbar_btns" id="contact_wording">
+          <button class="btn navbar_btns" [routerLink]="['/contact']" id="contact_wording">
             Contact
           </button>
           <div class="spaces_between_navbar_btns"></div>
           <button class="btn navbar_btns" id="white_phone_logo" style="color: white">
-            <img src="../../assets/navbar/phone-white.png" style="width: 35px;margin-top: -20px">
+            <img src="assets/navbar/phone-white.png" style="width: 35px;margin-top: -20px">
             0436 756 657
           </button>
 
           <button class="btn navbar_btns" id="purple_phone_logo" style="color: #2e0e5a">
-            <img src="../../assets/navbar/phone_logo_purple.png" style="width: 35px;margin-top: -20px;">
+            <img src="assets/navbar/phone_logo_purple.png" style="width: 35px;margin-top: -20px;">
             0436 756 657
           </button>
           <div class="spaces_between_navbar_btns"></div>
@@ -55,18 +55,18 @@
     </label>
   </div>
   <div>
-    <img src="../../assets/navbar/logo-white.png" id="whitelogo_mobile" class="mobile_img_logo">
-    <img src="../../assets/navbar/logo_purple.png" id="purplelogo_mobile" class="mobile_img_logo">
+    <img src="assets/navbar/logo-white.png" id="whitelogo_mobile" class="mobile_img_logo">
+    <img src="assets/navbar/logo_purple.png" id="purplelogo_mobile" class="mobile_img_logo">
   </div>
 
   <div class="menu-pane" style="width: 60vw;height: 100vh;background: #2e0e5a">
 
     <nav style="background: #2e0e5a">
       <ul class="menu-links">
-        <li><a href="###">Home</a></li>
-        <li><a href="###">Services</a></li>
-        <li><a href="###">Team</a></li>
-        <li><a href="###">Contact</a></li>
+        <li><a [routerLink]="['/']">Home</a></li>
+        <li><a [routerLink]="['/our_service']">Services</a></li>
+        <li><a [routerLink]="['/team']">Team</a></li>
+        <li><a [routerLink]="['/contact']">Contact</a></li>
       </ul>
     </nav>
   </div>

@@ -1,46 +1,51 @@
-<div class="enquiry_section" id="enquiry_section">
-  <div class="enquiry_heading contenttitle">
-    ENQUIRES
+
+<div style="position: fixed;width: 100%;top:0;z-index: 999">
+  <app-navbar></app-navbar>
+</div>
+<div class="enquiry_section" id="enquiry_section" style="background: #2e0e5a;margin-left: 0;margin-right: 0;">
+  <div class="row" style="max-width: 1500px;width: 80%;margin: auto;margin-top: 100px">
+  <div style="width: 50%">
+    <h1 class="section_header_purple">GET IN TOUCH</h1>
+    <h2 class="top_left_sub_title">Are you ready to make something memorable? We're ready to help</h2>
+    <app-google-map-component></app-google-map-component>
   </div>
+  <div style="width: 50%;">
   <div class="enquiry_body">
-    <div class="first_row">
       <div class="name_section">
         <input type="text" placeholder="Name" class="text_box" [(ngModel)]="customerName" />
-        <div [hidden]="!nameShow" class="error_message">
-          This field is required
-        </div>
+<!--        <div [hidden]="!nameShow" class="error_message">-->
+<!--          This field is required-->
+<!--        </div>-->
       </div>
       <div class="mobile_section">
         <input type="text" placeholder="Mobile" class="text_box" [(ngModel)]="customerMobile" />
-        <div [hidden]="!mobileShow" class="error_message">
-          This field is required
-        </div>
+<!--        <div [hidden]="!mobileShow" class="error_message">-->
+<!--          This field is required-->
+<!--        </div>-->
       </div>
-    </div>
-    <div class="second_row">
+
       <div class="email_section">
         <input type="text" placeholder="Email" class="text_box" [(ngModel)]="customerEmail" />
-        <div [hidden]="!emailShow" class="error_message">
-          This field is required
-        </div>
-        <div [hidden]="!invalidEmail" class="error_message">
-          The email address entered is invalid
-        </div>
-      </div>
-      <div class="subject_section">
-        <input type="text" placeholder="Subject" class="text_box" [(ngModel)]="customerSubject" />
-        <div [hidden]="!subjectShow" class="error_message">
-          This field is required
-        </div>
-      </div>
+<!--        <div [hidden]="!emailShow" class="error_message">-->
+<!--          This field is required-->
+<!--        </div>-->
+<!--        <div [hidden]="!invalidEmail" class="error_message">-->
+<!--          The email address entered is invalid-->
+<!--        </div>-->
     </div>
-    <div class="message_box">
+    <div class="subject_section">
+      <input type="text" placeholder="Subject" class="text_box" [(ngModel)]="customerSubject" />
+      <!--        <div [hidden]="!subjectShow" class="error_message">-->
+      <!--          This field is required-->
+      <!--        </div>-->
+    </div>
+    <div class="message_box" style="width: 100%">
                 <textarea placeholder="Message" [(ngModel)]="customerMessage" class="text_area_box"
                           rows="10" cols="0">
                 </textarea>
-      <div [hidden]="!enquiryMessageShow" class="error_message">
-        This field is required
-      </div>
+<!--      <div [hidden]="!enquiryMessageShow" class="error_message">-->
+<!--        This field is required-->
+<!--      </div>-->
     </div>
     <div class="submit_button" (click)="formsubmit()">
       <button type="button" class="enquire_button_btn">
@@ -58,4 +63,8 @@
 
     </div>
   </div>
+  </div>
+  </div>
 </div>
+
+<app-footer></app-footer>

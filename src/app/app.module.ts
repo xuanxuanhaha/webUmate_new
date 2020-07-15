@@ -12,6 +12,7 @@ import {TeamComponent} from './team/team.component';
 import {ContactComponent} from './contact/contact.component';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import {GoogleMapComponentComponent} from './google-map-component/google-map-component.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {HttpClientModule} from '@angular/common/http';
     MobileCarouselComponent,
     ServiceComponent,
     TeamComponent,
-    ContactComponent
+    ContactComponent,
+    GoogleMapComponentComponent
   ],
   imports: [
     BrowserModule,
