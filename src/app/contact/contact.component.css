@@ -710,3 +710,10 @@
 .contenttitle{
   font-family: Oswald;
 }
+
+ .mapouter{
+   margin-top: 80px;
+ }
+.gmap_canvas {
+  background:none!important;height:300px;width:100%;margin-left: 0;text-align: left;
+}

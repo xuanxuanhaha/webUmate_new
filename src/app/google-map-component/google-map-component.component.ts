@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 declare const google: any;
 @Component({
   selector: 'app-google-map-component',
@@ -7,6 +7,8 @@ declare const google: any;
 })
 export class GoogleMapComponentComponent implements OnInit {
   constructor() { }
+
+
 
    Canberra = {lat: -35.277730, lng: 149.133412};
 
