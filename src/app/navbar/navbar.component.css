@@ -202,9 +202,9 @@ input.hamburger-checkbox {
   .webUmate_menus{
     width: 70%;
   }
-  .webUmate_menus_row{
-    margin-right: 40px;
-  }
+  /*.webUmate_menus_row{*/
+  /*  margin-right: 40px;*/
+  /*}*/
 }
 @media screen and (max-width: 1105px) {
   .navbar_btns{

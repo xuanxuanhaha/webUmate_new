@@ -30,7 +30,7 @@ export class NavbarComponent implements OnInit {
 
   @HostListener('window:scroll', [])onWindowScroll() {
     // .scrollTop
-    console.log(this.document.documentElement.scrollTop);
+    // console.log(this.document.documentElement.scrollTop);
     this.Scroll_To_Height = this.document.documentElement.scrollTop;
     if (this.Scroll_To_Height > 0){
       document.getElementById('navbar_outer').style.background = 'white';

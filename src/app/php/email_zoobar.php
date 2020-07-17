@@ -21,15 +21,15 @@ function email_sending($from_user, $from_pass, $to_address, $to_address_name, $r
         * Server Mail Settings
         */
 
-        $mail->Host = 'smtp.gmail.com';
+        $mail->Host = 'mail.webumate.com.au';
         $mail->SMTPAuth = true;
         $mail->Username = $from_user;
         $mail->Password = $from_pass;
         $mail->SMTPSecure =  'ssl';
-        $mail->Port = 465;
+        $mail->Port = 587;
    echo('comes to line 31 in php');
         //Recipients
-        $mail->setFrom('zhangqixuan17@gmail.com', 'qixuan');
+        $mail->setFrom($customerEmail, $customerName);
         $mail->addAddress($to_address, $to_address_name);
         //$mail->addCC('cc@example.com');
         $mail->isHTML(true);
@@ -42,7 +42,7 @@ function email_sending($from_user, $from_pass, $to_address, $to_address_name, $r
         echo('Mailer Error: ' . $mail->ErrorInfo);
         } else{
         echo('Message Sent');
-}
+        }
         if ($mail_send) return 1;
         return 0;
     } catch (Exception $e) {
@@ -55,12 +55,12 @@ $email_data = file_get_contents("php://input");
 // Decoding the json data to retrieve based on objects
 $request = json_decode($email_data, true);
            echo('comes to line 56 in php');
-$debug = 1;
+$debug = 0;
 
 if ($debug) {
   $customerName    = "Harrison";
   $customerMobile  = "0420909356";
-  $customerEmail   = '1124236437@qq.com';
+  $customerEmail   = 'zhangqixuan17@gmail.com';
   $customerSubject = 'TESTING - AUTOMATIC TEST SCRIPTING';
   $customerMessage = "HAI.. COnducting test";
 } else {

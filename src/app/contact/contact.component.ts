@@ -16,7 +16,6 @@ export class ContactComponent implements OnInit {
 
   nameShow: any = false;
   emailShow: any = false;
-  mobileShow: any = false;
   invalidEmail: any = false;
   enquiryMessageShow: any = false;
   subjectShow: any = false;
@@ -56,11 +55,6 @@ export class ContactComponent implements OnInit {
       this.nameShow = false;
     }
 
-    if (!this.customerMobile) {
-      this.mobileShow = true;
-    } else {
-      this.mobileShow = false;
-    }
 
     if (!this.customerSubject){
       this.subjectShow = true;
@@ -74,11 +68,16 @@ export class ContactComponent implements OnInit {
       this.enquiryMessageShow = false;
     }
 
-    if (this.emailShow || this.invalidEmail || this.nameShow || this.mobileShow || this.subjectShow ||
-      this.enquiryMessageShow) {
+    if (this.emailShow || this.invalidEmail || this.nameShow || this.subjectShow || this.enquiryMessageShow) {
       this.bigErrorShow = true;
+      console.log('bigErrorShow is true');
+      console.log(this.emailShow, this.invalidEmail, this.nameShow, this.subjectShow, this.enquiryMessageShow);
+    }else{
+      this.bigErrorShow = false;
+      this.showSuccessMessage = true;
     }
-    // if (!this.bigErrorShow) {
+
+    if (!this.bigErrorShow) {
       /*
       * Including the collected data as JSON-object
       */
@@ -90,22 +89,16 @@ export class ContactComponent implements OnInit {
         message : this.customerMessage
       };
 
+
       this.sendData.sendEmail(jsonData).subscribe(data => {
         if (data !== '' && data !== null && data.toString().includes('success')) {
           this.resetAllValues();
-          this.bigErrorShow = false;
-          this.showSuccessMessage = true;
         } else {
-          this.showSuccessMessage = false;
-          this.bigErrorShow = true;
         }
       }, error => {
-        this.showSuccessMessage = false;
-        this.bigErrorShow = true;
       });
     this.submitBut = 'Submit';
-    // }
-    this.submitBut = 'Submit';
+    }
   }
 
   resetAllValues() {

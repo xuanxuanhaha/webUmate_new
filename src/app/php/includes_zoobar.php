@@ -9,11 +9,11 @@ function from_mail() {
 }
 
 function from_pass() {
-    return 'teoflsuccess0000';
+    return 'webumate8888';
 }
 
 function to_address() {
-    return '1124236437@qq.com';
+    return 'admin@webumate.com.au';
 }
 
 function to_address_name() {

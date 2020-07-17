@@ -15,8 +15,8 @@ const httpOptions = {
 })
 export class SendDataService {
 
-  urlHost = 'http://localhost:8000/email_zoobar.php';
-  urlUpload = 'http://localhost:8000/upload.php';
+  urlHost = 'http://webumate.com.au/php/email_zoobar.php';
+  urlUpload = 'http://webumate.com.au/php/upload.php';
 
   constructor(private http: HttpClient) {}
   /*
@@ -24,6 +24,7 @@ export class SendDataService {
    */
   sendEmail(data): Observable<any> {
     console.log('comes to send email function is ts');
+    console.log(data)
     return this.http.post<any>(this.urlHost, data, httpOptions);
   }
 

@@ -3,8 +3,8 @@
   <app-navbar></app-navbar>
 </div>
 <div class="enquiry_section" id="enquiry_section" style="background: #2e0e5a;margin-left: 0;margin-right: 0;">
-  <div class="row" style="max-width: 1500px;width: 80%;margin: auto;margin-top: 100px">
-  <div style="width: 50%">
+  <div class="row whole_body">
+  <div class="half_section_width">
     <h1 class="section_header_purple">GET IN TOUCH</h1>
     <h2 class="top_left_sub_title">Are you ready to make something memorable? We're ready to help</h2>
 <!--    <app-google-map-component></app-google-map-component>-->
@@ -52,13 +52,14 @@
 
 
   </div>
-  <div style="width: 50%;">
+  <div class="half_section_width">
+    <h1 class="section_header_purple mobile_only">Enquiry Form</h1>
   <div class="enquiry_body">
       <div class="name_section">
-        <input type="text" placeholder="Name" class="text_box" [(ngModel)]="customerName" />
-<!--        <div [hidden]="!nameShow" class="error_message">-->
-<!--          This field is required-->
-<!--        </div>-->
+        <input type="text" placeholder="Name *" class="text_box" [(ngModel)]="customerName" />
+        <div [hidden]="!nameShow" class="error_message">
+          This field is required
+        </div>
       </div>
       <div class="mobile_section">
         <input type="text" placeholder="Mobile" class="text_box" [(ngModel)]="customerMobile" />
@@ -68,27 +69,27 @@
       </div>
 
       <div class="email_section">
-        <input type="text" placeholder="Email" class="text_box" [(ngModel)]="customerEmail" />
-<!--        <div [hidden]="!emailShow" class="error_message">-->
-<!--          This field is required-->
-<!--        </div>-->
-<!--        <div [hidden]="!invalidEmail" class="error_message">-->
-<!--          The email address entered is invalid-->
-<!--        </div>-->
+        <input type="text" placeholder="Email *" class="text_box" [(ngModel)]="customerEmail" />
+        <div [hidden]="!emailShow" class="error_message">
+          This field is required
+        </div>
+        <div [hidden]="!invalidEmail" class="error_message">
+          The email address entered is invalid
+        </div>
     </div>
     <div class="subject_section">
-      <input type="text" placeholder="Subject" class="text_box" [(ngModel)]="customerSubject" />
-      <!--        <div [hidden]="!subjectShow" class="error_message">-->
-      <!--          This field is required-->
-      <!--        </div>-->
+      <input type="text" placeholder="Subject * " class="text_box" [(ngModel)]="customerSubject" />
+              <div [hidden]="!subjectShow" class="error_message">
+                This field is required
+              </div>
     </div>
     <div class="message_box" style="width: 100%">
-                <textarea placeholder="Message" [(ngModel)]="customerMessage" class="text_area_box"
+                <textarea placeholder="Message * " [(ngModel)]="customerMessage" class="text_area_box"
                           rows="10" cols="0">
                 </textarea>
-<!--      <div [hidden]="!enquiryMessageShow" class="error_message">-->
-<!--        This field is required-->
-<!--      </div>-->
+      <div [hidden]="!enquiryMessageShow" class="error_message">
+        This field is required
+      </div>
     </div>
     <div class="submit_button" (click)="formsubmit()">
       <button type="button" class="enquire_button_btn">
@@ -111,3 +112,21 @@
 </div>
 
 <app-footer></app-footer>
+
+
+
+<!--
+You can use either of these 2 settings.
+
+Incoming Server: mail.webumate.com.au
+IMAP Port: 143
+POP3 Port: 110
+Outgoing Server: mail.webumate.com.au
+SMTP Port: 587
+
+Incoming Server: cp-wc16.lon01.ds.network
+IMAP Port: 993
+POP3 Port: 995
+Outgoing Server: cp-wc16.lon01.ds.network
+SMTP Port: 465
+-->
