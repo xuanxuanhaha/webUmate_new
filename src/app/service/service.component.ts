@@ -12,6 +12,7 @@ export class ServiceComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    window.scrollTo(0, 0);
   }
 
   show_web_development_part_detail() {

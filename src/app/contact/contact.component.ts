@@ -27,6 +27,7 @@ export class ContactComponent implements OnInit {
   constructor(private sendData: SendDataService) { }
 
   ngOnInit(): void {
+    window.scrollTo(0, 0);
   }
 
   scrollDown() {

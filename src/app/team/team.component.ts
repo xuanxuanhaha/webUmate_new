@@ -15,6 +15,7 @@ export class TeamComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    window.scrollTo(0, 0);
     this.show_Ray_more();
     this.show_Sarvesh_more();
     this.show_Tina_more();
