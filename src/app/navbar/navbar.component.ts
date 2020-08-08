@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HostListener, Inject} from '@angular/core';
 import { DOCUMENT } from '@angular/common';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -9,7 +10,8 @@ import { DOCUMENT } from '@angular/common';
 export class NavbarComponent implements OnInit {
   // tslint:disable-next-line:variable-name
   Scroll_To_Height: any;
-  constructor(@Inject(DOCUMENT) private document: Document) {
+  // private router: any;
+  constructor(@Inject(DOCUMENT) private document: Document, private router: Router) {
   }
 
 
@@ -76,5 +78,7 @@ export class NavbarComponent implements OnInit {
 
     }
   }
-
+  goToHomePage(){
+    this.router.navigateByUrl('/');
+  }
 }
