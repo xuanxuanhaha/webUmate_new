@@ -27,7 +27,7 @@ export class GoogleMapComponentComponent implements OnInit {
       '<h4 id="firstHeading" class="firstHeading">CBD Dumpling House</h4>' +
       '<div id="bodyContent">' +
       '<p>Shop FG13C, 148 Bunda St, Canberra ACT 2601</p>' +
-      '<a href="https://www.google.com/maps/place/CBD+Dumpling+House/@-35.2776582,149.1313248,17z/data=!3m2!4b1!5s0x6b164d65fafc6899:0x2d7b761504aaecb5!4m5!3m4!1s0x6b164d6f52c5649b:0x1f1947da04efabce!8m2!3d-35.2776582!4d149.1335135?hl=zh-CN">在 Google 地图上查看 </a>' +
+      '<a href="https://www.google.com/maps/place/CBD+Dumpling+House/@-35.2776582,149.1313248,17z/data=!3m2!4b1!5s0x6b164d65fafc6899:0x2d7b761504aaecb5!4m5!3m4!1s0x6b164d6f52c5649b:0x1f1947da04efabce!8m2!3d-35.2776582!4d149.1335135?hl=zh-AU">See in Google map </a>' +
       '</div>' +
       '</div>';
 
