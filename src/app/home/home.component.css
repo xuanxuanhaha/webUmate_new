@@ -12,11 +12,17 @@
 }
 
 .contact_img{
-  margin-top: 50px;width: 240px
+  width: 240px
 }
 
 .contact_us_wording{
-  margin-top: -55px;margin-left:60px;font-size: 35px
+  margin-top: -58px;margin-left:60px;font-size: 35px
+}
+
+.contact_arrow_div{
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 50px;
 }
 
 .homebannerimg {
@@ -150,7 +156,7 @@
 
 
 .recent_project_first_line{
-  font-size: 1.4rem;color: #2e0e5a;font-weight: 300;margin-top: 20px
+  font-size: 1.3rem;color: #2e0e5a;font-weight: 300;margin-top: 20px
 }
 .recent_project_second_line{
   font-size: 3rem;color: #2e0e5a;font-weight: 600;margin-top: -10px

@@ -46,7 +46,7 @@ export class NavbarComponent implements OnInit {
       document.getElementById('purple_phone_logo').style.display = 'block';
 
       document.getElementById('service_wording').style.color = '#2e0e5a';
-      document.getElementById('team_wording').style.color = '#2e0e5a';
+      // document.getElementById('team_wording').style.color = '#2e0e5a';
       document.getElementById('home_wording').style.color = '#2e0e5a';
       document.getElementById('service_wording').style.color = '#2e0e5a';
       document.getElementById('contact_wording').style.color = '#2e0e5a';
@@ -65,7 +65,7 @@ export class NavbarComponent implements OnInit {
       document.getElementById('white_phone_logo').style.display = 'block';
 
       document.getElementById('service_wording').style.color = 'white';
-      document.getElementById('team_wording').style.color = 'white';
+      // document.getElementById('team_wording').style.color = 'white';
       document.getElementById('home_wording').style.color = 'white';
       document.getElementById('service_wording').style.color = 'white';
       document.getElementById('contact_wording').style.color = 'white';
