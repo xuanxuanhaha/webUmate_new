@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ServiceComponent implements OnInit {
   show_web_development_part = false;
   show_designs_part = false;
+  show_support_part=false
   show_data_security_part = false;
   constructor() { }
 
@@ -17,6 +18,10 @@ export class ServiceComponent implements OnInit {
 
   show_web_development_part_detail() {
     this.show_web_development_part = ! this.show_web_development_part;
+  }
+
+  show_support_part_detail(){
+    this.show_support_part = ! this.show_support_part;
   }
 
   show_design_part_detail() {

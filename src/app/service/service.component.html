@@ -29,16 +29,20 @@
   <div class="whole_border_of_main_section_wordings">
     <h5 class="title_wording">Website Development & Testing</h5>
     <div [hidden]="!show_web_development_part">
-    <h5 class="sub_wording"> - Static pages</h5>
-    <h5 class="sub_wording"> - Dynamic pages </h5>
+    <h5 class="sub_wording"> - Static & Dynamic pages</h5>
+    <h5 class="sub_wording"> - CRM solution </h5>
     <h5 class="sub_wording"> - Responsive to support different screens (Desktop, Tablet & Mobile) </h5>
     </div>
   </div>
 </div>
 
-<div class="whole_border_of_main_section">
+<div class="whole_border_of_main_section" (click)="show_support_part_detail()">
   <div class="whole_border_of_main_section_wordings">
     <h5 class="title_wording">Web Maintenance and Support</h5>
+    <div [hidden]="!show_support_part">
+      <h5 class="sub_wording"> - 365 days support </h5>
+      <h5 class="sub_wording"> - Maintain website worldwide</h5>
+      </div>
   </div>
 </div>
 
@@ -79,10 +83,10 @@
   </div>
 </div>
 
-<div class="whole_border_of_main_section">
+<!-- <div class="whole_border_of_main_section">
   <div class="whole_border_of_main_section_wordings">
     <h5 class="title_wording">Search Engine Optimization</h5>
   </div>
-</div>
+</div> -->
 
 <app-footer></app-footer>

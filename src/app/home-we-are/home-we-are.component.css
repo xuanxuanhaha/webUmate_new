@@ -256,16 +256,16 @@
     font-size: 5rem;
     margin-left: 50px;
   }
-.middle_white_part_whole_border{
-  padding-bottom: 80px;
-  margin-bottom: 80px;
-}
-.why_choose_left_wording{
-  margin-top: 60px;
-}
-.recent_project_second_line{
-  font-size: 2.1rem;
-}
+  .middle_white_part_whole_border{
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+  }
+  .why_choose_left_wording{
+    margin-top: 60px;
+  }
+  .recent_project_second_line{
+    font-size: 2.1rem;
+  }
 }
 @media screen and (max-width: 1250px) {
   .why_choose_left_wording{

@@ -71,7 +71,9 @@
   flex-direction: column;
 }
 .half_section_width{
-  width: 50%;
+  /* width: 50%; */
+  margin: auto
+
 }
 
 .location_area {
@@ -181,8 +183,8 @@
 }
 
 .enquiry_body {
-  width: 80%;
-  margin-left: 5%;
+  /* width: 80%; */
+  /* margin-left: 5%; */
   height: 100%;
 }
 
@@ -320,7 +322,7 @@
 }
 
 .whole_body{
-  max-width: 1500px;width: 80%;margin: auto;margin-top: 100px
+  max-width: 1500px;width: 100%;margin: auto;margin-top: 100px
 }
 
 @media screen and (max-width: 1700px) {
@@ -517,7 +519,8 @@
     font-size: 15px;
   }
   .half_section_width{
-    width: 100%;
+    width: 90%;
+    margin: auto
   }
   .enquiry_body{
     width: 100%;

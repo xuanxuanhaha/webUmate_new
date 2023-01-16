@@ -118,7 +118,8 @@
   height:0px;
   border: 50px solid;
   margin-left: 15%;
-  border-color: #ff2aad white white white;
+  border-color: #ff2aad transparent transparent transparent;
+  position: absolute;
 }
 .why_choose_right_icons{
   text-align: left;width: 48%
@@ -256,16 +257,16 @@
     font-size: 5rem;
     margin-left: 50px;
   }
-.middle_white_part_whole_border{
-  padding-bottom: 80px;
-  margin-bottom: 80px;
-}
-.why_choose_left_wording{
-  margin-top: 60px;
-}
-.recent_project_second_line{
-  font-size: 2.1rem;
-}
+  .middle_white_part_whole_border{
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+  }
+  .why_choose_left_wording{
+    margin-top: 60px;
+  }
+  .recent_project_second_line{
+    font-size: 2.1rem;
+  }
 }
 @media screen and (max-width: 1250px) {
   .why_choose_left_wording{
@@ -368,7 +369,7 @@
     width: 90%;
   }
   .section_header_webUmate{
-    font-size: 3.5rem;
+    font-size: 2.8rem;
   }
   .recent_project_second_line{
     font-size: 1.5rem;

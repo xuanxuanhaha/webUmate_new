@@ -13,6 +13,10 @@ import {ContactComponent} from './contact/contact.component';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {GoogleMapComponentComponent} from './google-map-component/google-map-component.component';
+import { HomeMoreDetailsComponent } from './home-more-details/home-more-details.component';
+import { HomeWorkCarouselComponent } from './home-work-carousel/home-work-carousel.component';
+import { HomeWhyChooseComponent } from './home-why-choose/home-why-choose.component';
+import { HomeWeAreComponent } from './home-we-are/home-we-are.component';
 
 
 @NgModule({
@@ -25,7 +29,11 @@ import {GoogleMapComponentComponent} from './google-map-component/google-map-com
     ServiceComponent,
     TeamComponent,
     ContactComponent,
-    GoogleMapComponentComponent
+    GoogleMapComponentComponent,
+    HomeMoreDetailsComponent,
+    HomeWorkCarouselComponent,
+    HomeWhyChooseComponent,
+    HomeWeAreComponent
   ],
   imports: [
     BrowserModule,
